@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAgent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Agent>
+    <AgentId>5</AgentId>
+    <Name>АгентXYZ</Name>
+    <CommissionPercentage>2.5</CommissionPercentage>
+    <TotalSalesAmount>25</TotalSalesAmount>
+  </Agent>
+  <Agent>
+    <AgentId>10</AgentId>
+    <Name>АгентABC</Name>
+    <CommissionPercentage>1.8</CommissionPercentage>
+    <TotalSalesAmount>15</TotalSalesAmount>
+  </Agent>
+  <Agent>
+    <AgentId>15</AgentId>
+    <Name>Агент123</Name>
+    <CommissionPercentage>3</CommissionPercentage>
+    <TotalSalesAmount>30</TotalSalesAmount>
+  </Agent>
+  <Agent>
+    <AgentId>20</AgentId>
+    <Name>Агент456</Name>
+    <CommissionPercentage>2.2</CommissionPercentage>
+    <TotalSalesAmount>22</TotalSalesAmount>
+  </Agent>
+  <Agent>
+    <AgentId>25</AgentId>
+    <Name>Агент789</Name>
+    <CommissionPercentage>1.5</CommissionPercentage>
+    <TotalSalesAmount>18</TotalSalesAmount>
+  </Agent>
+</ArrayOfAgent>

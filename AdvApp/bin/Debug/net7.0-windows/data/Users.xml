@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <UserId>0</UserId>
+    <Name>Администратор</Name>
+    <Login>admin</Login>
+    <Password>admin</Password>
+  </User>
+  <User>
+    <UserId>1</UserId>
+    <Name>Пользователь 1</Name>
+    <Login>user1</Login>
+    <Password>pass1</Password>
+  </User>
+  <User>
+    <UserId>2</UserId>
+    <Name>Пользователь 2</Name>
+    <Login>user2</Login>
+    <Password>pass2</Password>
+  </User>
+  <User>
+    <UserId>3</UserId>
+    <Name>Пользователь 3</Name>
+    <Login>user3</Login>
+    <Password>pass3</Password>
+  </User>
+  <User>
+    <UserId>4</UserId>
+    <Name>Пользователь 4</Name>
+    <Login>user4</Login>
+    <Password>pass4</Password>
+  </User>
+  <User>
+    <UserId>5</UserId>
+    <Name>Пользователь 5</Name>
+    <Login>user5</Login>
+    <Password>pass5</Password>
+  </User>
+  <User>
+    <UserId>6</UserId>
+    <Name>Пользователь 6</Name>
+    <Login>user6</Login>
+    <Password>pass6</Password>
+  </User>
+  <User>
+    <UserId>7</UserId>
+    <Name>Пользователь 7</Name>
+    <Login>user7</Login>
+    <Password>pass7</Password>
+  </User>
+  <User>
+    <UserId>8</UserId>
+    <Name>Пользователь 8</Name>
+    <Login>user8</Login>
+    <Password>pass8</Password>
+  </User>
+  <User>
+    <UserId>9</UserId>
+    <Name>Пользователь 9</Name>
+    <Login>user9</Login>
+    <Password>pass9</Password>
+  </User>
+  <User>
+    <UserId>10</UserId>
+    <Name>Александр</Name>
+    <Login>Alex</Login>
+    <Password>Aleks</Password>
+  </User>
+</ArrayOfUser>

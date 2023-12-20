@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfShow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Show>
+    <ShowId>1</ShowId>
+    <Name>Мероприятие1</Name>
+    <Rating>4.5</Rating>
+    <CostPerMinute>1000</CostPerMinute>
+  </Show>
+  <Show>
+    <ShowId>2</ShowId>
+    <Name>Мероприятие2</Name>
+    <Rating>3.8</Rating>
+    <CostPerMinute>800</CostPerMinute>
+  </Show>
+  <Show>
+    <ShowId>3</ShowId>
+    <Name>Мероприятие3</Name>
+    <Rating>4.2</Rating>
+    <CostPerMinute>1200</CostPerMinute>
+  </Show>
+  <Show>
+    <ShowId>5</ShowId>
+    <Name>Мероприятие5</Name>
+    <Rating>4.8</Rating>
+    <CostPerMinute>1500</CostPerMinute>
+  </Show>
+</ArrayOfShow>
