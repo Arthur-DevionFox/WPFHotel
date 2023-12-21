@@ -25,9 +25,9 @@
     <Grid Width="auto" Height="auto" VerticalAlignment="Center" HorizontalAlignment="Center">
         <Label Name="UserLabel" Content="Пользователь: [Username]" Margin="206,0,0,0" Style="{StaticResource LabelStyle}" Width="206" />
         <Button Content="Аренда номера" HorizontalAlignment="Center" Margin="0,62,0,0" Style="{StaticResource ButtonStyle}" Click="ShowsForm_Button" Height="67" VerticalAlignment="Top" />
-        <Button Content="Тарифы" HorizontalAlignment="Center" Margin="0,144,0,0" Style="{StaticResource ButtonStyle}" Click="AdvertisementsForm_Button" Height="67" VerticalAlignment="Top" />
+        <Button Content="Аренда" HorizontalAlignment="Center" Margin="0,144,0,0" Style="{StaticResource ButtonStyle}" Click="AdvertisementsForm_Button" Height="67" VerticalAlignment="Top" />
         <Button Content="Клиенты" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,224,0,0" Style="{StaticResource ButtonStyle}" Click="CustomersForm_Button" />
-        <Button Content="Агенты" HorizontalAlignment="Center" Margin="0,312,0,0" Style="{StaticResource ButtonStyle}" Click="Agents_Button" Height="67" VerticalAlignment="Top" />
+        <Button Content="Сотрудники" HorizontalAlignment="Center" Margin="0,312,0,0" Style="{StaticResource ButtonStyle}" Click="Agents_Button" Height="67" VerticalAlignment="Top" />
         <Button Content="Пользователи" Name="addUserButton" HorizontalAlignment="Center" Margin="0,398,0,0" Style="{StaticResource ButtonStyle}" Click="Users_Button" Height="67" VerticalAlignment="Top" />
     </Grid>
 </Window>

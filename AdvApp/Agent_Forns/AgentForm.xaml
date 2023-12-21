@@ -29,7 +29,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID сотрудника" ElementStyle="{StaticResource TextStyle}" Binding="{Binding Path=AgentId}" />
                 <DataGridTextColumn Header="ФИО" ElementStyle="{StaticResource TextStyle}" Binding="{Binding Path=Name}" />
-                <DataGridTextColumn Header="Должность" ElementStyle="{StaticResource TextStyle}" Binding="{Binding Path=CommissionPercentage}" />
+                <DataGridTextColumn Header="Рейтинг сотрудника" ElementStyle="{StaticResource TextStyle}" Binding="{Binding Path=CommissionPercentage}" />
                 <DataGridTextColumn Header="Заработная плата" ElementStyle="{StaticResource TextStyle}" Binding="{Binding Path=TotalSalesAmount}" />
             </DataGrid.Columns>
         </DataGrid>

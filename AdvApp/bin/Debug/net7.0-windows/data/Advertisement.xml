@@ -4,35 +4,14 @@
     <AdId>1</AdId>
     <ShowId>101</ShowId>
     <CustomerId>201</CustomerId>
-    <Date>2023-11-30T12:45:00.0000000+03:00</Date>
+    <Date>2023-11-30T12:45:00+03:00</Date>
     <DurationInMinutes>5</DurationInMinutes>
   </Advertisement>
   <Advertisement>
     <AdId>5</AdId>
     <ShowId>105</ShowId>
     <CustomerId>205</CustomerId>
-    <Date>2023-11-30T15:30:00.0000000+03:00</Date>
+    <Date>2023-11-30T15:30:00+03:00</Date>
     <DurationInMinutes>10</DurationInMinutes>
-  </Advertisement>
-  <Advertisement>
-    <AdId>8</AdId>
-    <ShowId>108</ShowId>
-    <CustomerId>208</CustomerId>
-    <Date>2023-11-29T20:00:00.0000000+03:00</Date>
-    <DurationInMinutes>7</DurationInMinutes>
-  </Advertisement>
-  <Advertisement>
-    <AdId>12</AdId>
-    <ShowId>112</ShowId>
-    <CustomerId>212</CustomerId>
-    <Date>2023-11-28T09:00:00.0000000+03:00</Date>
-    <DurationInMinutes>8</DurationInMinutes>
-  </Advertisement>
-  <Advertisement>
-    <AdId>15</AdId>
-    <ShowId>115</ShowId>
-    <CustomerId>215</CustomerId>
-    <Date>2023-11-27T14:20:00.0000000+03:00</Date>
-    <DurationInMinutes>6</DurationInMinutes>
   </Advertisement>
 </ArrayOfAdvertisement>

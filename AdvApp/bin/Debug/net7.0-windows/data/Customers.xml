@@ -2,32 +2,16 @@
 <ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Customer>
     <CustomerId>1</CustomerId>
-    <BankingDetails>Пользователь</BankingDetails>
+    <Name>Иванов Иван Иванович</Name>
+    <BankingDetails>*******************</BankingDetails>
     <Phone>123456789</Phone>
-    <ContactPerson>Иван Иванов</ContactPerson>
+    <ContactPerson>ivanov@mail.ru</ContactPerson>
   </Customer>
   <Customer>
     <CustomerId>2</CustomerId>
-    <BankingDetails>Клиент2</BankingDetails>
+    <Name>Петр Петров Петрович</Name>
+    <BankingDetails>*******************</BankingDetails>
     <Phone>987654321</Phone>
-    <ContactPerson>Петр Петров</ContactPerson>
-  </Customer>
-  <Customer>
-    <CustomerId>3</CustomerId>
-    <BankingDetails>Клиент3</BankingDetails>
-    <Phone>555555555</Phone>
-    <ContactPerson>Анна Сидорова</ContactPerson>
-  </Customer>
-  <Customer>
-    <CustomerId>4</CustomerId>
-    <BankingDetails>Клиент4</BankingDetails>
-    <Phone>11112222333</Phone>
-    <ContactPerson>Мария Петрова</ContactPerson>
-  </Customer>
-  <Customer>
-    <CustomerId>5</CustomerId>
-    <BankingDetails>Клиент5</BankingDetails>
-    <Phone>44443333222</Phone>
-    <ContactPerson>Алексей Иванов</ContactPerson>
+    <ContactPerson>petrov@mail.ru</ContactPerson>
   </Customer>
 </ArrayOfCustomer>
