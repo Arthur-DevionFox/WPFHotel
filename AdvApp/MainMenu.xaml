@@ -3,31 +3,60 @@
     <FrameworkElement.Resources>
         <ResourceDictionary>
             <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+                <Setter Property="FontFamily" Value="Montserrat" />
                 <Setter Property="Background" Value="#FF973333" />
                 <Setter Property="Foreground" Value="#FFFFFFFF" />
-                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontSize" Value="24" />
                 <Setter Property="FontWeight" Value="Bold" />
                 <Setter Property="Margin" Value="5" />
-                <Setter Property="Height" Value="67" />
-                <Setter Property="Width" Value="244" />
+                <Setter Property="Height" Value="50" />
+                <Setter Property="Width" Value="200" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="13">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Cursor" Value="Hand"/>
+                    </Trigger>
+                </Style.Triggers>
             </Style>
 
             <Style x:Key="LabelStyle" TargetType="{x:Type Label}">
-                <Setter Property="Foreground" Value="#FF000000" />
-                <Setter Property="FontSize" Value="14" />
-                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="FontFamily" Value="Century Gothic" />
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="FontWeight" Value="Bold" />
                 <Setter Property="VerticalAlignment" Value="Top" />
-                <Setter Property="Margin" Value="10,10,0,0" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="Width" Value="auto" />
+                <Setter Property="Height" Value="Auto" />
+                <Setter Property="Foreground" Value="#000" />
+            </Style>
+            
+            <Style x:Key="TitleStyle" TargetType="{x:Type TextBlock}">
+                <Setter Property="FontFamily" Value="Montserrat" />
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Width" Value="auto"/>
+                <Setter Property="Height" Value="auto"/>
+                <Setter Property="TextAlignment" Value="Center"/>
+                <Setter />
             </Style>
         </ResourceDictionary>
     </FrameworkElement.Resources>
 
     <Grid Width="auto" Height="auto" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Label Name="UserLabel" Content="Пользователь: [Username]" Margin="206,0,0,0" Style="{StaticResource LabelStyle}" Width="206" />
-        <Button Content="Аренда номера" HorizontalAlignment="Center" Margin="0,62,0,0" Style="{StaticResource ButtonStyle}" Click="ShowsForm_Button" Height="67" VerticalAlignment="Top" />
-        <Button Content="Аренда" HorizontalAlignment="Center" Margin="0,144,0,0" Style="{StaticResource ButtonStyle}" Click="AdvertisementsForm_Button" Height="67" VerticalAlignment="Top" />
+        <Label Name="UserLabel" Content="Пользователь: [Username]" Margin="0,-30,220,0" Style="{StaticResource LabelStyle}" />
+        <TextBlock Name="Title" Text="Выберите раздел" Style="{StaticResource TitleStyle}" Margin="0,15,0,0" />
+        <Button Content="Аренда номера" HorizontalAlignment="Center" Margin="0,62,0,0" Style="{StaticResource ButtonStyle}" Click="ShowsForm_Button" VerticalAlignment="Top" />
+        <Button Content="Аренда" HorizontalAlignment="Center" Margin="0,144,0,0" Style="{StaticResource ButtonStyle}" Click="AdvertisementsForm_Button" VerticalAlignment="Top" />
         <Button Content="Клиенты" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,224,0,0" Style="{StaticResource ButtonStyle}" Click="CustomersForm_Button" />
-        <Button Content="Сотрудники" HorizontalAlignment="Center" Margin="0,312,0,0" Style="{StaticResource ButtonStyle}" Click="Agents_Button" Height="67" VerticalAlignment="Top" />
-        <Button Content="Пользователи" Name="addUserButton" HorizontalAlignment="Center" Margin="0,398,0,0" Style="{StaticResource ButtonStyle}" Click="Users_Button" Height="67" VerticalAlignment="Top" />
+        <Button Content="Сотрудники" HorizontalAlignment="Center" Margin="0,312,0,0" Style="{StaticResource ButtonStyle}" Click="Agents_Button" VerticalAlignment="Top" />
+        <Button Content="Пользователи" Name="addUserButton" HorizontalAlignment="Center" Margin="0,398,0,0" Style="{StaticResource ButtonStyle}" Click="Users_Button" VerticalAlignment="Top" />
     </Grid>
 </Window>
