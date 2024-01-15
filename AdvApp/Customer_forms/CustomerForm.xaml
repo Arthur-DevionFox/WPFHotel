@@ -7,22 +7,43 @@
                     <Setter Property="Background" Value="#FF973333" />
                     <Setter Property="Foreground" Value="#FFFFFF" />
                     <Setter Property="FontWeight" Value="Bold" />
-                    <Setter Property="FontSize" Value="14" />
+                    <Setter Property="FontSize" Value="12" />
                     <Setter Property="Margin" Value="5" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="6">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
                 </Style>
 
                 <Style x:Key="TextStyle" TargetType="{x:Type TextBlock}">
                     <Setter Property="Foreground" Value="#000000" />
                     <Setter Property="FontSize" Value="14" />
                 </Style>
+                
+                <Style x:Key="TextField" TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
             </ResourceDictionary>
         </FrameworkElement.Resources>
 
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Background="#B5D5CA" Height="43">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Background="#339bff" Height="43">
             <Button Name="AddButton" Content="Добавить" Style="{StaticResource ButtonStyle}" Click="AddButton_Click" />
             <Button Name="DeleteButton" Content="Удалить" Style="{StaticResource ButtonStyle}" Click="DeleteButton_Click" />
             <Button Name="EditButton" Content="Изменить" Style="{StaticResource ButtonStyle}" Click="EditButton_Click" />
-            <TextBox Name="SearchTextBox" TextChanged="SearchTextBox_TextChanged"  Width="200" Margin="5" />
+            <TextBox Name="SearchTextBox" Style="{StaticResource TextField}" TextChanged="SearchTextBox_TextChanged"  Width="200" Margin="5" />
         </StackPanel>
 
         <DataGrid Name="dataGrid" AutoGenerateColumns="False" Margin="0,40,0,0" VerticalAlignment="Top">

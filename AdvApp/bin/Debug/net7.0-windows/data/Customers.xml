@@ -12,6 +12,6 @@
     <Name>Петр Петров Петрович</Name>
     <BankingDetails>*******************</BankingDetails>
     <Phone>987654321</Phone>
-    <ContactPerson>petrov@mail.ru</ContactPerson>
+    <ContactPerson>petrov@mail.com</ContactPerson>
   </Customer>
 </ArrayOfCustomer>
