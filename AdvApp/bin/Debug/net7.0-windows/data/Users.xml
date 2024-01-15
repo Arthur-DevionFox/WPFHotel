@@ -66,4 +66,10 @@
     <Login>Alex</Login>
     <Password>Aleks</Password>
   </User>
+  <User>
+    <UserId>11</UserId>
+    <Name>Test</Name>
+    <Login>Test</Login>
+    <Password>123456789</Password>
+  </User>
 </ArrayOfUser>

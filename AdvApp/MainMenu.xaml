@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Window x:Class="AdvApp.MainMenu" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Главное меню" Height="550" Width="450" ResizeMode="NoResize" Closed="MainMenu_Closed">
+<Window x:Class="AdvApp.MainMenu" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Главное меню" Height="550" Width="550" ResizeMode="NoResize" Closed="MainMenu_Closed">
     <FrameworkElement.Resources>
         <ResourceDictionary>
             <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
@@ -42,21 +42,20 @@
                 <Setter Property="FontFamily" Value="Montserrat" />
                 <Setter Property="FontSize" Value="25" />
                 <Setter Property="FontWeight" Value="Bold" />
-                <Setter Property="Width" Value="auto"/>
+                <Setter Property="Width" Value="420"/>
                 <Setter Property="Height" Value="auto"/>
                 <Setter Property="TextAlignment" Value="Center"/>
-                <Setter />
             </Style>
         </ResourceDictionary>
     </FrameworkElement.Resources>
 
-    <Grid Width="auto" Height="auto" VerticalAlignment="Center" HorizontalAlignment="Center">
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Height="450">
         <Label Name="UserLabel" Content="Пользователь: [Username]" Margin="0,-30,220,0" Style="{StaticResource LabelStyle}" />
-        <TextBlock Name="Title" Text="Выберите раздел" Style="{StaticResource TitleStyle}" Margin="0,15,0,0" />
-        <Button Content="Аренда номера" HorizontalAlignment="Center" Margin="0,62,0,0" Style="{StaticResource ButtonStyle}" Click="ShowsForm_Button" VerticalAlignment="Top" />
-        <Button Content="Аренда" HorizontalAlignment="Center" Margin="0,144,0,0" Style="{StaticResource ButtonStyle}" Click="AdvertisementsForm_Button" VerticalAlignment="Top" />
-        <Button Content="Клиенты" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,224,0,0" Style="{StaticResource ButtonStyle}" Click="CustomersForm_Button" />
-        <Button Content="Сотрудники" HorizontalAlignment="Center" Margin="0,312,0,0" Style="{StaticResource ButtonStyle}" Click="Agents_Button" VerticalAlignment="Top" />
-        <Button Content="Пользователи" Name="addUserButton" HorizontalAlignment="Center" Margin="0,398,0,0" Style="{StaticResource ButtonStyle}" Click="Users_Button" VerticalAlignment="Top" />
+        <TextBlock Name="Title" Text="Выберите раздел" Style="{StaticResource TitleStyle}" Margin="0,100,0,0" />
+        <Button Content="Аренда номера" HorizontalAlignment="Left" Margin="0,164,0,0" Style="{StaticResource ButtonStyle}" Click="ShowsForm_Button" VerticalAlignment="Top" />
+        <Button Content="Аренда: Бронь" HorizontalAlignment="Right" Margin="30,164,0,0" Style="{StaticResource ButtonStyle}" Click="AdvertisementsForm_Button" VerticalAlignment="Top" />
+        <Button Content="Клиенты" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,240,0,0" Style="{StaticResource ButtonStyle}" Click="CustomersForm_Button" />
+        <Button Content="Сотрудники" HorizontalAlignment="Right" Margin="0,240,0,0" Style="{StaticResource ButtonStyle}" Click="Agents_Button" VerticalAlignment="Top" />
+        <Button Content="Пользователи" Name="addUserButton" Width="200" Height="40" FontSize="16" HorizontalAlignment="Right" VerticalContentAlignment="Bottom" Margin="0,408,0,0" Style="{StaticResource ButtonStyle}" Click="Users_Button" VerticalAlignment="Top" />
     </Grid>
 </Window>
